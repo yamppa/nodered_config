@@ -1,0 +1,788 @@
+[
+    {
+        "id": "bcd2bd4772e18c0b",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e32cf781a46bac64",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "9ebc7544be9dc2a9",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "73c76681625de8be",
+        "type": "ui-page",
+        "name": "Data Collection",
+        "ui": "e32cf781a46bac64",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "tabs",
+        "theme": "9ebc7544be9dc2a9",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "34d927c466d35253",
+        "type": "ui-group",
+        "name": "DC1",
+        "page": "73c76681625de8be",
+        "width": "12",
+        "height": "1",
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "707275e13ac403dd",
+        "type": "ui-page",
+        "name": "Heater Profiles",
+        "ui": "e32cf781a46bac64",
+        "path": "/page2",
+        "icon": "home",
+        "layout": "notebook",
+        "theme": "9ebc7544be9dc2a9",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "faf117ce06b96050",
+        "type": "ui-page",
+        "name": "Measurements",
+        "ui": "e32cf781a46bac64",
+        "path": "/page3",
+        "icon": "home",
+        "layout": "flex",
+        "theme": "9ebc7544be9dc2a9",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "2b3eb89005b815b0",
+        "type": "ui-page",
+        "name": "LLM",
+        "ui": "e32cf781a46bac64",
+        "path": "/page4",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "9ebc7544be9dc2a9",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 4,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "c758103d52cf99b2",
+        "type": "ui-group",
+        "name": "H1",
+        "page": "707275e13ac403dd",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "013330105a1b6d30",
+        "type": "ui-group",
+        "name": "DC2",
+        "page": "73c76681625de8be",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "f714f2225dc51e73",
+        "type": "ui-group",
+        "name": "DC3",
+        "page": "73c76681625de8be",
+        "width": 6,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "92130a82ac620ef7",
+        "type": "ui-group",
+        "name": "H2",
+        "page": "707275e13ac403dd",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "0971c4777507c5c7",
+        "type": "ui-group",
+        "name": "H3",
+        "page": "707275e13ac403dd",
+        "width": 6,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "d1cc72ffd6a25c96",
+        "type": "ui-group",
+        "name": "H4",
+        "page": "707275e13ac403dd",
+        "width": 6,
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "844561ae8df663bb",
+        "type": "ui-group",
+        "name": "M1",
+        "page": "faf117ce06b96050",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "30a7b4cede02f271",
+        "type": "ui-group",
+        "name": "M2",
+        "page": "faf117ce06b96050",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "2d07452016836bf3",
+        "type": "ui-group",
+        "name": "M3",
+        "page": "faf117ce06b96050",
+        "width": 6,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "de827dbed69bcd40",
+        "type": "ui-group",
+        "name": "LLM1",
+        "page": "2b3eb89005b815b0",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "e538bc826cbae397",
+        "type": "ui-group",
+        "name": "LLM2",
+        "page": "2b3eb89005b815b0",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "9db58f5b64965580",
+        "type": "ui-group",
+        "name": "LLM3",
+        "page": "2b3eb89005b815b0",
+        "width": 6,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "d39d1de167653131",
+        "type": "inject",
+        "z": "bcd2bd4772e18c0b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "6b84317986598660"
+            ]
+        ]
+    },
+    {
+        "id": "192c43e24c1a574f",
+        "type": "debug",
+        "z": "bcd2bd4772e18c0b",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "6b84317986598660",
+        "type": "http request",
+        "z": "bcd2bd4772e18c0b",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://api.open-notify.org/iss-now.json",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 350,
+        "y": 120,
+        "wires": [
+            [
+                "192c43e24c1a574f",
+                "8f99be9d984c67f9",
+                "365f152683bf2841",
+                "c772d0d752118834",
+                "bb517aadab263c04"
+            ]
+        ]
+    },
+    {
+        "id": "2e35e78a130fe278",
+        "type": "ui-text",
+        "z": "bcd2bd4772e18c0b",
+        "group": "34d927c466d35253",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Latitude",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 620,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "2217b76a27424f14",
+        "type": "ui-text",
+        "z": "bcd2bd4772e18c0b",
+        "group": "34d927c466d35253",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Longitude",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 620,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "8f99be9d984c67f9",
+        "type": "change",
+        "z": "bcd2bd4772e18c0b",
+        "name": "Latitude",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.iss_position.latitude",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "topic.iss_position.latitude",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 200,
+        "wires": [
+            [
+                "2e35e78a130fe278"
+            ]
+        ]
+    },
+    {
+        "id": "365f152683bf2841",
+        "type": "change",
+        "z": "bcd2bd4772e18c0b",
+        "name": "Longitude",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.iss_position.longitude",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "longitude",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 240,
+        "wires": [
+            [
+                "2217b76a27424f14"
+            ]
+        ]
+    },
+    {
+        "id": "1b58026326dde18b",
+        "type": "ui-text",
+        "z": "bcd2bd4772e18c0b",
+        "group": "34d927c466d35253",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "ISS Location",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 630,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "3f891585bb95e51a",
+        "type": "ui-slider",
+        "z": "bcd2bd4772e18c0b",
+        "group": "c758103d52cf99b2",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "always",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "",
+        "colorTrack": "",
+        "colorThumb": "",
+        "showTextField": false,
+        "x": 90,
+        "y": 440,
+        "wires": [
+            [
+                "8e899cab316fbb44"
+            ]
+        ]
+    },
+    {
+        "id": "8e899cab316fbb44",
+        "type": "ui-chart",
+        "z": "bcd2bd4772e18c0b",
+        "group": "92130a82ac620ef7",
+        "name": "",
+        "label": "chart",
+        "order": 1,
+        "chartType": "line",
+        "category": "",
+        "categoryType": "none",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 270,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f6038303a1b6d235",
+        "type": "ui-chart",
+        "z": "bcd2bd4772e18c0b",
+        "group": "013330105a1b6d30",
+        "name": "",
+        "label": "chart",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "timestamp",
+        "xAxisPropertyType": "msg",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "-180",
+        "ymax": "180",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 630,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c772d0d752118834",
+        "type": "function",
+        "z": "bcd2bd4772e18c0b",
+        "name": "function 1",
+        "func": "const lon = Number(msg.payload.iss_position.longitude);\n\nconst ts = msg.payload.timestamp * 1000;\n\nreturn [\n    {\n        payload: lon,\n        topic: \"Longitude\",\n        timestamp: ts\n    },\n    \n    \n];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 320,
+        "wires": [
+            [
+                "f6038303a1b6d235"
+            ]
+        ]
+    },
+    {
+        "id": "bb517aadab263c04",
+        "type": "function",
+        "z": "bcd2bd4772e18c0b",
+        "name": "function 2",
+        "func": "const lat = Number(msg.payload.iss_position.latitude);\nconst ts = msg.payload.timestamp * 1000;\nreturn [\n    {\n        payload: lat,\n        topic: \"Latitude\",\n        timestamp: ts\n    }\n];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 360,
+        "wires": [
+            [
+                "f6038303a1b6d235"
+            ]
+        ]
+    }
+]
