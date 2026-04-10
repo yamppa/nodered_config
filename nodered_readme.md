@@ -1,11 +1,12 @@
-# Node-RED
+## Node-RED
 
 Serving as the central communication hub between MQTT-enabled sensors, a PostgreSQL database, and the Grafana visualization suite.
 
 ### Project Overview
-* **Port:** `1880`
-* **Node-RED Version:** `4.1.5`
-* **Core Purpose:** Facilitates sensor data ingestion, database persistence, and measurement control logic.
+
+**Port:** `1880`
+**Node-RED Version:** `4.1.5`
+**Core Purpose:** Facilitates sensor data ingestion, database persistence, and measurement control logic.
 
 ---
 
@@ -60,7 +61,7 @@ The FlowFuse Dashboard is categorized into the following functional pages:
 | **Measurements** | Access to historical measurement logs and a quick-link to the **IRA-Tool**. |
 | **Heater Profiles** | Management interface for heating profile configurations. |
 | **Sequences** | Management interface for making heater profile sequences. |
-| **MQTT-Endpoints** | . |
+| **MQTT-Endpoints** | Overview of incoming mqtt messages. |
 | **Error** | Dedicated page for monitoring system and sensor error messages. |
 
 
