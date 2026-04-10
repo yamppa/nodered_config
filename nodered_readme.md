@@ -4,8 +4,8 @@ Serving as the central communication hub between MQTT-enabled sensors, a Postgre
 
 ### Project Overview
 
-**Port:** `1880`
-**Node-RED Version:** `4.1.5`
+**Port:** `1880` <br>
+**Node-RED Version:** `4.1.5`<br>
 **Core Purpose:** Facilitates sensor data ingestion, database persistence, and measurement control logic.
 
 ---
