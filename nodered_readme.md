@@ -1,25 +1,25 @@
-Node-RED
+# Node-RED
 
 Serving as the central communication hub between MQTT-enabled sensors, a PostgreSQL database, and the Grafana visualization suite.
 
-Project Overview
+### Project Overview
 * **Port:** `1880`
 * **Node-RED Version:** `4.1.5`
 * **Core Purpose:** Facilitates sensor data ingestion, database persistence, and measurement control logic.
 
 ---
 
-Dependencies
+### Dependencies
 To run this project, the following nodes must be installed via the Palette Manager or `npm`:
 
 | Node Package | Version | Description |
 | :--- | :--- | :--- |
-| `@flowfuse/node-red-dashboard` | `~1.30.2` | Primary UI for device control and data visualization. |
-| `node-red-contrib-postgresql` | `~0.15.4` | Handles all queries and insertions to the database. |
+| `@flowfuse/node-red-dashboard` | `1.30.2` | Primary UI for device control and data visualization. |
+| `node-red-contrib-postgresql` | `0.15.4` | Handles all queries and insertions to the database. |
 
 ---
 
-Development Practices
+### Development Practices
 To maintain project integrity and readability:
 
 * **Concurrency:** **One person, one flow.** To avoid merge conflicts, only work on a single flow at a time.
@@ -30,7 +30,7 @@ To maintain project integrity and readability:
 
 ---
 
-Flow Architecture
+## Flow Architecture
 
 ### 1. MQTT Reception
 The entry point for all sensor data. Messages from Mosquitto are filtered into standardized internal links for clean downstream consumption:
@@ -50,7 +50,7 @@ The central page for data persistence. This flow parses sensor messages and maps
 
 ---
 
-##Dashboard Navigation
+## Dashboard Navigation
 The FlowFuse Dashboard is categorized into the following functional pages:
 
 | Page | Description |
@@ -63,4 +63,5 @@ The FlowFuse Dashboard is categorized into the following functional pages:
 | **MQTT-Endpoints** | . |
 | **Error** | Dedicated page for monitoring system and sensor error messages. |
 
-> **Note:** Currently no folder mounted to the container, so version .
+
+> **Note:** Currently no folder mounted to the container, so version control is very manual.
